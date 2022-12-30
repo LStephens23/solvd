@@ -1,0 +1,13 @@
+02:06:47.868 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - public main.java.com.solvd.vehiclefactory.vehicles.Car(java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws main.java.com.solvd.vehiclefactory.exceptions.InvalidMakeChoiceException,main.java.com.solvd.vehiclefactory.exceptions.InvalidModelChoiceException,main.java.com.solvd.vehiclefactory.exceptions.InvalidSeriesChoiceException,main.java.com.solvd.vehiclefactory.exceptions.InvalidColorChoiceException
+02:06:47.877 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - private int main.java.com.solvd.vehiclefactory.vehicles.Car.maxCapacity
+02:06:47.878 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - private int main.java.com.solvd.vehiclefactory.vehicles.Car.numWindows
+02:06:47.878 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - private int main.java.com.solvd.vehiclefactory.vehicles.Car.numWheels
+02:06:47.878 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - private static long main.java.com.solvd.vehiclefactory.vehicles.Car.numCarsProduced
+02:06:47.879 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - public int main.java.com.solvd.vehiclefactory.vehicles.Car.getMaxCapacity()
+02:06:47.879 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - public static long main.java.com.solvd.vehiclefactory.vehicles.Car.getNumCarsProduced()
+02:06:47.880 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - public static void main.java.com.solvd.vehiclefactory.vehicles.Car.setNumCarsProduced(long)
+02:06:47.880 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - public void main.java.com.solvd.vehiclefactory.vehicles.Car.setMaxCapacity(int)
+02:06:47.880 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - public void main.java.com.solvd.vehiclefactory.vehicles.Car.setNumWheels(int)
+02:06:47.881 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - public int main.java.com.solvd.vehiclefactory.vehicles.Car.getNumWindows()
+02:06:47.881 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - public void main.java.com.solvd.vehiclefactory.vehicles.Car.setNumWindows(int)
+02:06:47.882 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - public int main.java.com.solvd.vehiclefactory.vehicles.Car.getNumWheels()

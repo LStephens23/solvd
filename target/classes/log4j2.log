@@ -1,0 +1,63 @@
+18:17:58.369 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - Octavia Oliver owns this vehicle factory.
+18:17:58.374 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - India Inigo's hourly rate has been changed from 40.0 to 50.0 by Mickaela Mittens.
+18:17:58.374 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - India Inigo's department has been changed from Interior to Tire by Mickaela Mittens.
+18:17:58.374 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - *************************************************
+18:17:58.374 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - Starting Inventory: [[4 Metal Door], [100 Solder Roll], [1 Motor], [4 White Paint], [10 Fabric Roll], [4 Tires], [50 Sheets of Paper]]
+18:17:58.375 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - Metal Door is low in stock.
+18:17:58.376 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - Motor is low in stock.
+18:17:58.376 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - White Paint is low in stock.
+18:17:58.376 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - Tires is low in stock.
+18:17:58.380 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - 3
+18:17:58.381 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - [4 Metal Door] removed from inventory.
+18:17:58.381 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - Green Toyota Camry SE Nightshade
+18:17:58.382 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - Sissy Simpson Stamps Metal.
+18:17:58.382 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - **********************************
+18:17:58.382 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - Current inventory: [100 Solder Roll][1 Motor][4 White Paint][10 Fabric Roll][4 Tires][50 Sheets of Paper]
+18:17:58.382 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - [100 Solder Roll] removed from inventory.
+18:17:58.382 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - Green Toyota Camry SE Nightshade
+18:17:58.382 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - Wendy Wotts Stamps Metal.
+18:17:58.383 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - **********************************
+18:17:58.383 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - Current inventory: [1 Motor][4 White Paint][10 Fabric Roll][4 Tires][50 Sheets of Paper]
+18:17:58.383 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - [1 Motor] removed from inventory.
+18:17:58.383 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - Green Toyota Camry SE Nightshade
+18:17:58.383 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - Molly Mackey Mechanizes.
+18:17:58.383 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - **********************************
+18:17:58.384 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - Current inventory: [4 White Paint][10 Fabric Roll][4 Tires][50 Sheets of Paper]
+18:17:58.384 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - [4 White Paint] removed from inventory.
+18:17:58.384 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - Green Toyota Camry SE Nightshade
+18:17:58.384 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - Penny Prince paints an undercoat of gray paint.
+18:17:58.384 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - Penny Prince paints a final coat of Green.
+18:17:58.384 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - **********************************
+18:17:58.384 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - Current inventory: [10 Fabric Roll][4 Tires][50 Sheets of Paper]
+18:17:58.385 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - [10 Fabric Roll] removed from inventory.
+18:17:58.385 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - Green Toyota Camry SE Nightshade
+18:17:58.386 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - India Inigo Installs Trim.
+18:17:58.386 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - **********************************
+18:17:58.386 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - Current inventory: [4 Tires][50 Sheets of Paper]
+18:17:58.387 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - [4 Tires] removed from inventory.
+18:17:58.387 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - Green Toyota Camry SE Nightshade
+18:17:58.387 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - Tia Timber Installs Tires.
+18:17:58.387 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - **********************************
+18:17:58.387 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - Current inventory: [50 Sheets of Paper]
+18:17:58.387 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - Isabel Iviola Inspects.
+18:17:58.387 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - Green Toyota Camry SE Nightshade
+18:17:58.388 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - Moving Forward
+18:17:58.388 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - Moving Backward
+18:17:58.388 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - Turning Left
+18:17:58.388 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - Turning Right
+18:17:58.388 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - Changing Gear to 2
+18:17:58.388 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - Braking
+18:17:58.389 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - [50 Sheets of Paper] Used.
+18:17:58.389 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - **********************************
+18:17:58.389 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - Current inventory: 
+18:17:58.389 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - ***********END OF PROCESS FOR VEHICLE************
+18:17:58.389 [main] FATAL main.java.com.solvd.vehiclefactory.Runner - Inventory Item [4 Metal Door] Not Found. FATAL ERROR:Inventory is insufficient for continuing production of vehicle.
+18:17:58.389 [main] FATAL main.java.com.solvd.vehiclefactory.Runner - Inventory Item [4 Metal Door] Not Found. FATAL ERROR:Inventory is insufficient for continuing production of vehicle.
+18:17:58.391 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - Blue is not a valid color selection for a vehicle.
+18:17:58.392 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - 8 is not a valid selection for a series for a Streetfighter vehicle
+18:17:58.392 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - Good News! We can produce vehicle VIN8567832 Brown Ducati Streetfighter V2 and it's been added to vehicles in production
+18:17:58.393 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - Good News! We can produce vehicle VIN6478932 Maroon Honda Accord Sport 2.0T and it's been added to vehicles in production
+18:17:58.393 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - Chevrolet is not a valid selection for a make.
+18:17:58.395 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - Pixie is not a valid selection for a model for a Honda vehicle.
+18:17:58.395 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - Good News! We can produce vehicle VIN0234322 Yellow Honda Fit Sport and it's been added to vehicles in production
+18:17:58.398 [main] INFO  main.java.com.solvd.vehiclefactory.Runner - Good News! We can produce vehicle VIN6774562 White Toyota Yaris Hatchback and it's been added to vehicles in production
