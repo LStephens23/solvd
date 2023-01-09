@@ -1,47 +1,36 @@
 package main.java.com.solvd.threadexample;
 
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import main.java.com.solvd.vehiclefactory.Runner;
-
 public class ThreadExample {
-	private static Logger logger = LogManager.getLogger(Runner.class.getName());
+	private static Logger logger = LogManager.getLogger(ThreadExample.class.getName());
 
 	public static void main(String[] args) {
-        RunnableA runnableA = new RunnableA();
-        Thread thread1 = new Thread(runnableA);
-        thread1.start();
+		RunnableA runnableA = new RunnableA();
+		Thread thread1 = new Thread(runnableA);
+		thread1.start();
 
-       RunnableB runnableB = new RunnableB();
-        Thread thread2 = new Thread(runnableB);
-        thread2.start();
-        
-        ConnectionPoolA pool = new ConnectionPoolA(5);
+		RunnableB runnableB = new RunnableB();
+		Thread thread2 = new Thread(runnableB);
+		thread2.start();
 
-        ExecutorService executor = Executors.newFixedThreadPool(7);
-        for (int i = 0; i < 7; i++) {
-            executor.execute(() -> {
-                try {
-                    Connection connection = pool.getConnection();
-                    try {
-                        connection.executeQuery();
-                    } finally {
-                        pool.releaseConnection(connection);
-                    }
-                } catch (InterruptedException e) {
-					logger.info("Connection Failed: "+ e);
-                }
-            });
-        }
+		ConnectionPoolA poolA = new ConnectionPoolA(5);
 
-        executor.shutdown();
+		for (int i = 0; i < 7; i++) {
+			try {
+				Connection connection = poolA.getConnection();
+				try {
+					connection.executeQuery();
+				}finally {
+					//
+				}
+			} catch (InterruptedException e) {
+				logger.info("Connection Failed: "+ e);
+			}
+		}
 
-        pool.close();
-
+		poolA.close();
 
 	}
 

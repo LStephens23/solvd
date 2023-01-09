@@ -1,68 +1,45 @@
 package main.java.com.solvd.threadexample;
 
-import java.util.Queue;
-import java.util.Set;
 import java.util.concurrent.*;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import main.java.com.solvd.vehiclefactory.Runner;
-
 public class ConnectionPoolB {
-	
-	private static Logger logger = LogManager.getLogger(Runner.class.getName());
 
-    private final Queue<Connection> availableConnections;
-    private final Set<Connection> inUseConnections;
+	private static Logger logger = LogManager.getLogger(ThreadExample.class.getName());
 
-    public ConnectionPoolB(int poolSize) {
-        availableConnections = new ConcurrentLinkedQueue<Connection>();
-        inUseConnections = ConcurrentHashMap.newKeySet();
+	private final LinkedBlockingQueue<Connection> availableConnections;
 
-        // add connections to the queue
-        for (int i = 0; i < poolSize; i++) {
-            availableConnections.offer(new Connection());
-        }
-    }
+	public ConnectionPoolB(int poolSize) {
+		availableConnections = new LinkedBlockingQueue<Connection>(poolSize);
+		// add connections to the queue
+		for (int i = 0; i < poolSize; i++) {
+			availableConnections.add(new Connection());
+		}
+	}
 
-    public CompletionStage<Connection> getConnection() {
-        return CompletableFuture.supplyAsync(() -> {
-            synchronized (availableConnections) {
-                while (availableConnections.isEmpty()) {
-                    try {
-						availableConnections.wait();
-					} catch (InterruptedException e) {
-						logger.info("Connection Failed: "+ e);
-					}
-                }
+	public synchronized CompletableFuture<Connection> getConnection() {
+		return CompletableFuture.supplyAsync(() -> {
+			try {
+				return availableConnections.take();
+			} catch (InterruptedException e) {
+				Thread.currentThread().interrupt();
+				logger.error("Connection Failed: "+ e);
+				//supplyAsync doesn't allow for checked 
+				//exceptions to be thrown so we wrap it in
+				//a runtime exception
+				throw new RuntimeException(e);
+			}
+		});
+	}
 
-                Connection connection = availableConnections.poll();
-                inUseConnections.add(connection);
-                return connection;
-            }
-        });
-    }
-
-    public CompletionStage<Void> releaseConnection(Connection connection) {
-        return CompletableFuture.runAsync(() -> {
-            synchronized (availableConnections) {
-                inUseConnections.remove(connection);
-                availableConnections.offer(connection);
-                availableConnections.notifyAll();
-            }
-        });
-    }
-
-    public CompletionStage<Void> close() {
-        return CompletableFuture.runAsync(() -> {
-            for (Connection connection : availableConnections) {
-                connection.close();
-            }
-            for (Connection connection : inUseConnections) {
-                connection.close();
-            }
-        });
-    }
+	public CompletionStage<Void> close() {
+		return CompletableFuture.runAsync(() -> {
+			for (Connection connection : availableConnections) {
+				connection.close();
+			}
+		});
+	}
 }
 

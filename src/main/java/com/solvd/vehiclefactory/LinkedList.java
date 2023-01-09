@@ -1,7 +1,6 @@
 package main.java.com.solvd.vehiclefactory;
 
 import java.util.Iterator;
-import java.util.NoSuchElementException;
 import java.util.function.Consumer;
 
 import org.apache.logging.log4j.*;
@@ -154,7 +153,7 @@ public class LinkedList<T> implements Iterable<T>{
 
 	@Override
 	public Iterator<T> iterator() {
-		return new ListIterator(head);
+		return new ListIterator<T>(head);
 	}
 
 	public Node<T> getHead() {

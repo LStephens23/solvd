@@ -3,7 +3,6 @@ package main.java.com.solvd.vehiclefactory;
 import java.util.ArrayList;
 import java.util.GregorianCalendar;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map;
 import org.apache.logging.log4j.*;
 
@@ -41,7 +40,6 @@ public class Runner {
 		manager.setNewHourlyRate(employee, 50f);
 		manager.setNewStation(employee, "Tire");
 		logger.info("*************************************************");
-
 
 		//Employee enters some data for a vehicle to be made
 		String color = "Green";
@@ -94,7 +92,6 @@ public class Runner {
 			
 		});
 
-		HashMap<String, Vehicle> vehiclesNeeded = new HashMap<>();
 		// Stream through list of vehicles needed and add those we can produce to vehiclesInProduction
 		initializeVehiclesNeeded().entrySet().stream().filter(v -> {
 			try {

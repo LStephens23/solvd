@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
-import java.util.function.Predicate;
 
 import main.java.com.solvd.vehiclefactory.exceptions.InvalidColorChoiceException;
 import main.java.com.solvd.vehiclefactory.exceptions.InvalidMakeChoiceException;

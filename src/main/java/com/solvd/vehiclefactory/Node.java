@@ -2,7 +2,7 @@ package main.java.com.solvd.vehiclefactory;
 
 public class Node<T> {
 	private T data;
-	private Node next;
+	private Node<T> next;
 
 	public Node(T data) {
 		this.data = data;

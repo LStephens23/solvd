@@ -18,17 +18,17 @@ public class ReflectionExample {
 
 		Class<?> carClass = Class.forName("main.java.com.solvd.vehiclefactory.vehicles.Car");
 
-		Constructor[] constructors = carClass.getDeclaredConstructors();
-		Constructor constructor = constructors[0];
+		Constructor<?>[] constructors = carClass.getDeclaredConstructors();
+		Constructor<?> constructor = constructors[0];
 		Vehicle vehicle = (Vehicle) constructor.newInstance("Blue", "Toyota", "Rav4", "X");
-		for (Constructor c : constructors) {		
+		for (Constructor<?> c : constructors) {		
 			logger.info(c);
 		}
 
 		Field[] fields = carClass.getDeclaredFields();
 		Field capField = carClass.getDeclaredField("maxCapacity");
 		capField.setAccessible(true);
-		int cap = (int) capField.get(vehicle);
+		//int cap = (int) capField.get(vehicle);
 		for (Field f :fields) {		
 			logger.info(f);
 		}
